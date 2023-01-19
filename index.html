@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" id="linkcss" href="./dist/css/lightmode.min.css" />
+  </head>
+  <body>
+    <div class="container-general">
+      <header class="header">
+        <div class="container">
+          <div class="navbar">
+            <a href="">
+              <img src="./assets/Car-Rental.svg" alt="Car-Rental" />
+            </a>
+            <div class="navbar__nav">
+              <ul class="navbar__nav-list">
+                <li class="navbar__nav-list-items">Categories
+                </li>
+                <li class="navbar__nav-list-items" data-id="1">About Us
+                  <img class="navbar__nav-list-items-img-1" src="./assets/arrow-darkmode.svg" alt="arrow-darkmode">
+                  <div class="navbar__nav-list-items-collapse-dropdown-1">
+                    <ul class="navbar__nav-list-items-collapse-dropdown-1-list">
+                      <li class="navbar__nav-list-items-collapse-dropdown-1-list-items">
+                        <a class="navbar__nav-list-items-collapse-dropdown-1-list-items-link" href="">News</a>
+                      </li>
+                      <li class="navbar__nav-list-items-collapse-dropdown-1-list-items">
+                        <a class="navbar__nav-list-items-collapse-dropdown-1-list-items-link" href="">Careers</a>
+                      </li>
+                      <li class="navbar__nav-list-items-collapse-dropdown-1-list-items">
+                        <a class="navbar__nav-list-items-collapse-dropdown-1-list-items-link" href="">Locations</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="navbar__nav-list-items" data-id="2">Help center
+                  <img class="navbar__nav-list-items-img-2" src="./assets/arrow-darkmode.svg" alt="arrow-darkmode">
+                  <div class="navbar__nav-list-items-collapse-dropdown-2">
+                    <ul class="navbar__nav-list-items-collapse-dropdown-2-list">
+                      <li class="navbar__nav-list-items-collapse-dropdown-2-list-items">
+                        <a class="navbar__nav-list-items-collapse-dropdown-2-list-items-link" href="">News</a>
+                      </li>
+                      <li class="navbar__nav-list-items-collapse-dropdown-2-list-items">
+                        <a class="navbar__nav-list-items-collapse-dropdown-2-list-items-link" href="">Contact us</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <div class="navbar__nav-login-data">
+                <a href=":tel" class="navbar__nav-login-data-title">
+                  +1 855 420 0000
+                </a>
+                <button class="navbar__nav-login-data-mode">
+                  <img
+                    class="navbar__nav-login-data-mode-img"
+                    src="./assets/darkmode.svg"
+                    alt="darkmode"
+                  />
+                </button>
+                <button class="navbar__nav-login-data-login">
+                  Login
+                  <img src="./assets/login.svg" alt="login" />
+                </button>
+              </div>
+            </div>
+            <button class="navbar__toggler-hamburger">
+              <img
+                class="navbar__toggler-hamburger-img"
+                src="./assets/hamburger.svg"
+                alt="hamburger"
+              />
+            </button>
+            <div class="mobile-menu">
+              <div class="mobile-menu__header">
+                <a href="">
+                  <img src="./assets/Car-Rental.svg" alt="Car-Rental" />
+                </a>
+                <button class="mobile-menu__header-close">
+                  <img src="./assets/close-menu.svg" alt="close-menu" />
+                </button>
+              </div>
+              <div class="mobile-menu__body">
+                <h1 class="mobile-menu__body-category">Categories</h1>
+                <h2 class="mobile-menu__body-about">About Us</h2>
+                <ul class="mobile-menu__body-list">
+                  <li class="mobile-menu__body-list-items">
+                    <a href="" class="mobile-menu__body-list-items-links"
+                      >News</a
+                    >
+                  </li>
+                  <li class="mobile-menu__body-list-items">
+                    <a href="" class="mobile-menu__body-list-items-links"
+                      >Careers</a
+                    >
+                  </li>
+                  <li class="mobile-menu__body-lis-items">
+                    <a href="" class="mobile-menu__body-list-items-links"
+                      >Locations</a
+                    >
+                  </li>
+                </ul>
+                <h2 class="mobile-menu__body-help">Help center</h2>
+                <ul class="mobile-menu__body-list">
+                  <li class="mobile-menu__body-list-items">
+                    <a href="" class="mobile-menu__body-list-items-links"
+                      >FAQ</a
+                    >
+                  </li>
+                  <li class="mobile-menu__body-list-items">
+                    <a href="" class="mobile-menu__body-list-items-links"
+                      >Contact us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="mobile-menu__footer">
+                <a class="mobile-menu__footer-tel" href="">+1 855 420 0000</a>
+                <div class="mobile-menu__footer-login-block">
+                  <button class="mobile-menu__footer-login-block-mode">
+                    <img
+                      class="mobile-menu__footer-login-block-mode-img"
+                      src="./assets/darkmode.svg"
+                      alt="darkmode"
+                    />
+                  </button>
+                  <button class="mobile-menu__footer-login-block-login">
+                    Login
+                    <img src="./assets/login.svg" alt="login" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <div class="section-slider-outer">
+            <div class="section-slider-outer__pages">
+              <button
+                class="section-slider-outer__pages-btn-1"
+                data-id="1"
+              ></button>
+              <button
+                class="section-slider-outer__pages-btn-2"
+                data-id="2"
+              ></button>
+            </div>
+            <div class="section-slider-outer__pages-active">
+              <div class="section-slider-outer__pages-active-item" data-id="0"></div>
+              <div class="section-slider-outer__pages-active-item"></div>
+              <div class="section-slider-outer__pages-active-item"></div>
+            </div>
+            <ul class="section-slider-outer-player">
+              <li class="section-slider-outer-player-items" data-id="1">
+                <img src="./assets/sliderIcons/car-1.png" alt="car-1" />
+              </li>
+              <li class="section-slider-outer-player-items" data-id="2">
+                <img src="./assets/sliderIcons/car-2.png" alt="car-2" />
+              </li>
+              <li class="section-slider-outer-player-items" data-id="3">
+                <img src="./assets/sliderIcons/car-3.png" alt="car-3" />
+              </li>
+            </ul>
+          </div>
+          <section class="section-cars">
+            <div class="input-data">
+              <form action="" class="input-data__form">
+                <input
+                  type="text"
+                  class="input-data__form-input"
+                  placeholder="Find the car of your dreams"
+                />
+                <button class="input-data__form-btn">
+                  <img src="./assets/search.svg" alt="search" />
+                </button>
+              </form>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+    <script src="./js/slider.js"></script>
+  </body>
+</html>
