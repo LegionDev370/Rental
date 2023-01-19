@@ -113,5 +113,13 @@
 @media (max-width: 576px) {
   .section-slider-outer {
     height: 300px;
+    &__pages{
+      right: 5px;
+      bottom: 15px;
+      &-active{
+        bottom: 25px;
+        left: 20px;
+      }
+    }
   }
 }

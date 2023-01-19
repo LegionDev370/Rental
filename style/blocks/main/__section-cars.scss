@@ -48,3 +48,18 @@
     }
   }
 }
+@media (max-width: 576px) {
+  .section-cars {
+    .input-data {
+      top: 20px;
+      &__form-input {
+        &::placeholder {
+          font-size: 15px;
+        }
+      }
+      &__form-btn {
+        right: -5%;
+      }
+    }
+  }
+}
