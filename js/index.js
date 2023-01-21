@@ -8,7 +8,7 @@ const mobileMenu = document.querySelector(".mobile-menu");
 const togglerHamburger = document.querySelector(".navbar__toggler-hamburger");
 const hamburgerImg = document.querySelector(".navbar__toggler-hamburger-img");
 const closeMenu = document.querySelector(".mobile-menu__header-close");
-const containerGeneral = document.querySelector(".container-general")
+const containerGeneral = document.querySelector(".container-general");
 const modeDarkLightBtn = document.querySelector(".navbar__nav-login-data-mode");
 const modeDarkLightImg = document.querySelector(
   ".navbar__nav-login-data-mode-img"
@@ -112,6 +112,10 @@ const navbarActive = ({ target }) => {
   }
 };
 
+const viewAllCars = document.querySelector(
+  ".section-cars__car-block-body-bottom-view"
+);
+
 navbarList.children[1].onclick = function (event) {
   navbarActive(event);
 };
@@ -122,7 +126,7 @@ navbarList.children[2].onclick = function (event) {
 const onMode = (current) => {
   mode = !mode;
   if (mode) {
-    localStorage.setItem("mode",mode)
+    localStorage.setItem("mode", mode);
     current.style.background = "#272727";
     body.style.background = "#1C1C1C";
     linkCss.setAttribute("href", "./dist/css/darkmode.min.css");
@@ -141,7 +145,7 @@ const onMode = (current) => {
     hamburgerIconImg.setAttribute("src", "./assets/darkmode-hamburger.svg");
     modeMobileDarkLightImg.setAttribute("src", "./assets/lightmode.svg");
   } else {
-    localStorage.removeItem("mode")
+    localStorage.removeItem("mode");
     current.style.background = "#F5F5F5";
     body.style.background = "#fff";
     navbarList.children[1].classList.remove("box-active-1");
@@ -162,7 +166,7 @@ const onMode = (current) => {
   }
 };
 
-onMode(modeDarkLightBtn)
+onMode(modeDarkLightBtn);
 
 modeDarkLightBtn.onclick = function () {
   onMode(this);
@@ -172,13 +176,13 @@ modeMobileDarkLight.onclick = function () {
 };
 togglerHamburger.onclick = function () {
   this.style.display = "none";
-  containerGeneral.classList.add("activeContainer")
+  containerGeneral.classList.add("activeContainer");
   mobileMenu.classList.add("mobile-active");
 };
 closeMenu.onclick = function () {
   mobileMenu.classList.remove("mobile-active");
   togglerHamburger.style.display = "block";
-  containerGeneral.classList.remove("activeContainer")
+  containerGeneral.classList.remove("activeContainer");
 };
 
 export const arr = [
@@ -525,6 +529,10 @@ function renderCars(arr) {
     carContainer.appendChild(block);
   });
 }
+
+viewAllCars.onclick = function () {
+  renderCars(arr);
+};
 
 spinner.style.display = "block";
 setTimeout(() => {

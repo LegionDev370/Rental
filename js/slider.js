@@ -53,7 +53,7 @@ let widthCont = null;
 let widthId = 0;
 let num = 0;
 
-function sliderFunc(media) {
+function sliderFunc() {
   const getStyles = findElement(".container");
   let style = getComputedStyle(getStyles);
   let res = style.width.split("").map((item) => {

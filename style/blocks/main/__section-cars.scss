@@ -1,5 +1,6 @@
 .section-cars {
   position: relative;
+  margin-bottom: 160px;
   .input-data {
     position: absolute;
     max-width: 600px;
@@ -102,6 +103,22 @@
         }
       }
       &-bottom {
+        &-view {
+          width: 173px;
+          height: 58px;
+          display: block;
+          margin: 25px auto;
+          border: none;
+          background: #299764;
+          border-radius: 100px;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 22px;
+          color: #ffffff;
+          cursor: pointer;
+        }
         &-cars {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
@@ -243,18 +260,18 @@
     }
   }
 }
-@media (max-width: 580px){
+@media (max-width: 580px) {
   .section-cars {
     &__car-block {
       &-body {
-        &-top{
+        &-top {
           max-width: 350px;
         }
         &-bottom {
           &-cars {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
-            &-items{
+            &-items {
               &-info {
                 display: flex;
                 align-items: center;
@@ -307,18 +324,18 @@
     }
   }
 }
-@media (max-width: 428px){
+@media (max-width: 428px) {
   .section-cars {
     &__car-block {
       &-body {
-        &-top{
+        &-top {
           max-width: 350px;
         }
         &-bottom {
           &-cars {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
-            &-items{
+            &-items {
               &-info {
                 display: flex;
                 align-items: center;
@@ -356,18 +373,18 @@
     }
   }
 }
-@media (max-width: 380px){
+@media (max-width: 380px) {
   .section-cars {
     &__car-block {
       &-body {
-        &-top{
+        &-top {
           max-width: 300px;
         }
         &-bottom {
           &-cars {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
-            &-items{
+            &-items {
               &-info {
                 display: flex;
                 align-items: center;
@@ -405,4 +422,3 @@
     }
   }
 }
-
